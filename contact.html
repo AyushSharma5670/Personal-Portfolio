@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background:#1e1e1e;
+      margin: 20px;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      background-color: white;
+      padding: 30px 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+      width: 100%;
+    }
+
+    .container:hover{
+        transform: translateY(-8px);
+    }
+
+    .container h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #333;
+    }
+
+    form h4 {
+      margin-top: 20px;
+      margin-bottom: 5px;
+      color: #444;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      color: #333;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      transition: border 0.3s ease;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus {
+      border-color: #007BFF;
+      outline: none;
+    }
+
+    input[type="checkbox"] {
+      margin-right: 10px;
+    }
+
+    input[type="button"] {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    input[type="button"]:hover {
+      background-color: #0056b3;
+    }
+
+        .back-link  
+         {
+         position: absolute;
+        top: 20px;
+        left: 20px;
+        }
+    .back-button
+    {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  
+     }
+     
+.back-button button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.back-button button:hover {
+  background-color: #0056b3;
+}
+   footer {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: black;
+      color: white;
+      padding: 15px 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      text-align: right;
+      font-size: 14px;
+      z-index: 1000;
+    }
+
+    footer p {
+      margin: 5px 0;
+    }
+
+    footer a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    footer a:hover {
+      color: #ffdd57; /* Optional hover color */
+    }
+
+    @media (max-width: 600px) {
+      footer {
+        right: 10px;
+        bottom: 10px;
+        font-size: 12px;
+        padding: 10px 15px;
+      }
+    }
+    .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0072ff;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+
+  </style>
+</head>
+<body>
+   <section class="back-button">
+        <section class="back-link">
+  <button onclick="location.href='personal.html'">Home</button>
+</section>
+</section>
+    <div class="container">
+        <h1>
+            Contact Me!
+        </h1>
+        <form>
+            <h4>Name(Required)</h4>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lname"><br>
+            <br>
+            <h4>Email(Required)</h4>
+            <label for="email"></label>
+            <input type="email" name="email" id="email"><br>
+            <br>
+            <h4>Which are you?(Required)</h4>
+            <label for="s">Student</label>
+            <input type="checkbox" name="s" id="s"><br>
+            <br>
+            <label for="r">Recruiter</label>
+            <input type="checkbox" name="r" id="r"><br>
+            <br>
+            <label for="c">Company</label>
+            <input type="checkbox" name="c" id="c"><br>
+            <br>
+            <label for="o">Other</label>
+            <input type="checkbox" name="o" id="o"><br>
+            <br>
+            <h4>Message(Required)</h4>
+            <label for="m"></label>
+            <input type="text" id="m" name="m"><br>
+            <br>
+            <a href="responce.html" class="btn">Send</a>
+        </form>
+    </div>
+    <footer>
+        <p><a href="mailto:ayu8103529974@gmail.com">ayu8103529974@gmail.com</a></p>
+        <p><a href="https://www.linkedin.com/in/ayush-sharma-3843ba2b6" target="_blank">Linkedin</a></p>
+        <p><a href="https://github.com/AyushSharma5670" target="_blank">Github</a></p>
+    </footer>
+</body>
+</html>
